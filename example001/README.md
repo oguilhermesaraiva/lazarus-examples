@@ -164,7 +164,7 @@ Ela serve como modelo para as classes filhas.
 * [``virtual``][objfpc] → pode ser sobrescrito
 * [``abstract``][objfpc] → deve ser sobrescrito
 * [``override``][objfpc] → substitui uma implementação herdada
-* [``overload``][objfpc] → sobrescreve uma implementação
+* [``overload``][objfpc] → sobrecarrega uma implementação
 
 Exemplo:
 #### virtual e abstract
@@ -207,7 +207,7 @@ O usuário seleciona os botões que instanciam e conectam na tomada os objetos:
 
 ```pascal
 Appliance := TFan.Create;
-ShowMessage(Device.StatusMessage);
+ShowMessage(Appliance.StatusMessage);
 ```
 
 Isso demonstra:
@@ -226,7 +226,7 @@ Isso demonstra:
 ## 🧪 Como testar
 
 1. Abra o projeto no **Lazarus**
-2. Compile e execute
+2. Compile e execute com F9
 3. Clique nos botões radio para instanciar diferentes objetos
 4. Observe mensagens e comportamentos distintos
 
